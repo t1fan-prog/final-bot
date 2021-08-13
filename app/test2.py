@@ -1,12 +1,7 @@
-# payload = "{\"name\": \"{name}\",\n\"surname\": \"{surname}\",\n\"room\": {room},\n\"chat_id\": {chat_id}}".format(name='Test4', surname='soid', room=333, chat_id=24142)
-import requests
+from zoneinfo import ZoneInfo
+from datetime import datetime, timezone
 
-url = "http://127.0.0.1:5000/api/student?chat-id=241"
+now = 'Thu, 12 Aug 2021 00:00:00 GMT'
 
-payload={}
-files={}
-headers = {}
-
-response = requests.request("GET", url, headers=headers, data=payload, files=files).json()
-
-print(response)
+dtobj = datetime.strptime(now, '%a, %d %b %Y %H:%M:%S %Z')
+print(dtobj.date())

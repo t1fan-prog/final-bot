@@ -26,7 +26,7 @@ def send_welcome(message):
         # Проверяем, есть ли уже такой пользователь в базе данных
         response = get_user(message.chat.id)
         if response['result'] == 'OK':
-            bot.send_message(message.chat.id, f'Привет, {response["name"]}! Для просмотра меню нажмите на /help',
+            bot.send_message(message.chat.id, f'Привет, {response["name"]}!',
                              reply_markup=gen_markup())
         else:
             msg = bot.reply_to(message, "Привет, я ваш помощник по дежурству!\nКак вас зовут?")
@@ -213,7 +213,7 @@ def process_room_step(message, user):
 
         response = requests.request("POST", url, headers=headers, data=payload).json()
         if response['status'] == '250 OK':
-            bot.send_message(message.chat.id, f'Добро пожаловать, {user.name}!')
+            bot.send_message(message.chat.id, f'Добро пожаловать, {user.name}!\nДля просмотра меню нажмите на /help')
             logger.info(f'Студент {user.name} {user.surname} chat_id: {user.chat_id} добавлен в БД.')
         else:
             bot.send_message(message.chat.id, f'Что-то пошло не так')

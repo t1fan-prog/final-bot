@@ -16,3 +16,137 @@ __main__ - 2021-08-16 13:47:16,238 - INFO - Новый пользователь.
 __main__ - 2021-08-16 13:47:24,644 - INFO - Студент Артём Шестак chat_id: 429026017 добавлен в БД.
 __main__ - 2021-08-16 13:48:49,045 - INFO - Студент Артём Шестак chat_id: 429026017 сообщил о проблеме
 __main__ - 2021-08-16 13:48:52,157 - INFO - Студент Артём Шестак chat_id: 429026017 сообщил о выселении.
+__main__ - 2021-08-16 13:54:14,869 - INFO - Список дежурств обновлён. Функция: update
+__main__ - 2021-08-16 19:39:16,526 - INFO - Новый пользователь. Chat_id: 435942747 Функция: send_welcome
+__main__ - 2021-08-16 19:39:30,025 - INFO - Студент Яша Лава chat_id: 435942747 добавлен в БД.
+__main__ - 2021-08-16 19:39:32,593 - ERROR - Exeption occured callback_query
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/app/bot.py", line 132, in callback_query
+    date = datetime.strptime(student['date'], '%a, %d %b %Y %H:%M:%S %Z').date()
+KeyError: 'date'
+__main__ - 2021-08-16 19:39:35,099 - INFO - Новый пользователь. Chat_id: 652981201 Функция: send_welcome
+__main__ - 2021-08-16 19:39:35,821 - INFO - Новый пользователь. Chat_id: 430278964 Функция: send_welcome
+__main__ - 2021-08-16 19:39:38,998 - INFO - Новый пользователь. Chat_id: 282937654 Функция: send_welcome
+__main__ - 2021-08-16 19:39:44,665 - INFO - Новый пользователь. Chat_id: 272931666 Функция: send_welcome
+__main__ - 2021-08-16 19:39:46,089 - INFO - Студент Яша Лава chat_id: 435942747 сообщил о выселении.
+__main__ - 2021-08-16 19:39:48,891 - ERROR - Exeption occured problem_step
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/app/bot.py", line 156, in problem_step
+    response = requests.request("POST", url, headers=headers, data=payload).json()
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/requests/models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+__main__ - 2021-08-16 19:39:54,586 - INFO - Студент Llll Jjjj chat_id: 652981201 добавлен в БД.
+__main__ - 2021-08-16 19:40:04,030 - INFO - Студент Llll Jjjj chat_id: 652981201 сообщил о выселении.
+__main__ - 2021-08-16 19:40:05,128 - ERROR - Exeption occured callback_query
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/app/bot.py", line 137, in callback_query
+    bot.send_message(429026017, f'Студент {student["name"]} {student["surname"]}, комната: {student["room"]}, '
+KeyError: 'name'
+__main__ - 2021-08-16 19:40:06,901 - INFO - Студент Макс Рандомное число chat_id: 282937654 добавлен в БД.
+__main__ - 2021-08-16 19:40:10,533 - INFO - Студент Андрей Коротенко chat_id: 430278964 добавлен в БД.
+__main__ - 2021-08-16 19:40:12,401 - INFO - Студент Andrew D chat_id: 272931666 добавлен в БД.
+__main__ - 2021-08-16 19:40:20,364 - INFO - Студент Макс Рандомное число chat_id: 282937654 сообщил о выселении.
+__main__ - 2021-08-16 19:40:24,920 - INFO - Студент Андрей Коротенко chat_id: 430278964 сообщил о проблеме
+__main__ - 2021-08-16 19:40:31,974 - INFO - Студент Андрей Коротенко chat_id: 430278964 сообщил о выселении.
+__main__ - 2021-08-16 19:40:35,601 - INFO - Студент Яша Лава chat_id: 435942747 сообщил о проблеме
+__main__ - 2021-08-16 19:41:13,691 - INFO - Студент Андрей Коротенко chat_id: 430278964 сообщил о выселении.
+__main__ - 2021-08-16 19:41:21,237 - INFO - Студент Andrew D chat_id: 272931666 сообщил о выселении.
+__main__ - 2021-08-16 19:41:38,470 - INFO - Студент Andrew D chat_id: 272931666 сообщил о проблеме
+__main__ - 2021-08-16 19:41:48,526 - INFO - Студент Andrew D chat_id: 272931666 сообщил о выселении.
+__main__ - 2021-08-16 19:42:32,308 - ERROR - Exeption occured callback_query
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/app/bot.py", line 137, in callback_query
+    bot.send_message(429026017, f'Студент {student["name"]} {student["surname"]}, комната: {student["room"]}, '
+KeyError: 'name'
+__main__ - 2021-08-16 19:42:56,193 - INFO - Новый пользователь. Chat_id: 597866060 Функция: send_welcome
+__main__ - 2021-08-16 19:43:17,363 - INFO - Студент Головач Лена chat_id: 597866060 добавлен в БД.
+__main__ - 2021-08-16 19:43:21,083 - INFO - Список дежурств обновлён. Функция: update
+__main__ - 2021-08-16 19:43:23,028 - INFO - Студент Головач Лена chat_id: 597866060 сообщил о выселении.
+__main__ - 2021-08-16 19:45:15,525 - INFO - Студент Llll Jjjj chat_id: 652981201 сообщил о выселении.
+__main__ - 2021-08-16 19:45:41,149 - INFO - Удалён студент с chat_id 430278964. Функция: deletion
+__main__ - 2021-08-16 19:45:41,149 - INFO - Попытка отправки сообщения об изменениях в графике студенту с chat_id 597866060. Функция: deletion
+__main__ - 2021-08-16 19:46:13,787 - INFO - Студент Головач Лена chat_id: 597866060 сообщил о проблеме
+__main__ - 2021-08-16 19:48:33,290 - INFO - Список дежурств обновлён. Функция: update
+__main__ - 2021-08-16 19:52:14,071 - INFO - Студент Головач Лена chat_id: 597866060 сообщил о проблеме
+__main__ - 2021-08-16 19:53:47,995 - INFO - Новый пользователь. Chat_id: 414380331 Функция: send_welcome
+__main__ - 2021-08-16 19:54:13,396 - INFO - Студент Жора Петушиный chat_id: 414380331 добавлен в БД.
+__main__ - 2021-08-16 20:29:17,938 - INFO - Новый пользователь. Chat_id: 341289947 Функция: send_welcome
+__main__ - 2021-08-16 20:29:52,760 - INFO - Студент Андрей Иванов chat_id: 341289947 добавлен в БД.
+__main__ - 2021-08-16 20:36:20,527 - INFO - Студент Андрей Иванов chat_id: 341289947 сообщил о проблеме
+__main__ - 2021-08-17 13:34:52,633 - ERROR - Exeption occured get_user
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/http/client.py", line 1253, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1299, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1248, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1008, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.9/http/client.py", line 948, in send
+    self.connect()
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f59bdbb1a90>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/student?chat-id=435942747 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f59bdbb1a90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/app/bot.py", line 263, in get_user
+    response = requests.request("GET", url, headers=headers, data=payload, files=files).json()
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/t1fan/pythonProject/finalProject/venv/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/student?chat-id=435942747 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f59bdbb1a90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+__main__ - 2021-08-17 13:34:52,669 - ERROR - Exeption occured send_welcome
+Traceback (most recent call last):
+  File "/home/t1fan/pythonProject/finalProject/app/bot.py", line 28, in send_welcome
+    if response['result'] == 'OK':
+TypeError: 'NoneType' object is not subscriptable
+__main__ - 2021-08-17 13:38:42,248 - INFO - Новый пользователь. Chat_id: 420672673 Функция: send_welcome
+__main__ - 2021-08-17 13:39:01,577 - INFO - Студент Артём Шестак chat_id: 429026017 сообщил о проблеме
+__main__ - 2021-08-17 13:39:13,534 - INFO - Студент бибас бакложановый chat_id: 420672673 добавлен в БД.
+__main__ - 2021-08-17 13:39:35,383 - INFO - Студент бибас бакложановый chat_id: 420672673 сообщил о выселении.
+__main__ - 2021-08-17 13:39:59,002 - INFO - Студент бибас бакложановый chat_id: 420672673 сообщил о проблеме

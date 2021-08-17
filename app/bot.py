@@ -96,7 +96,7 @@ def deletion(message):
                                 f'Функция: {traceback.extract_stack()[-1][2]}')
                     bot.send_message(chat_id, 'Произошли изменения в графике, обратите, пожалуйста, внимание.\n'
                                               'Для того, чтобы узнать дату дежурства, нажмите на /help')
-            elif response['status'] == '255 OK':
+            elif response['status'] == '404':
                 bot.send_message(message.chat.id, f'Нет студента с таким chat_id')
             else:
                 logger.error(f'Ошибка при работе с базой данных, Функция: {traceback.extract_stack()[-1][2]}')
